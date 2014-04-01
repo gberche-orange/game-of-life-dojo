@@ -1,3 +1,14 @@
+TODO
+- a cell has live neighbours
+- Any live cell with fewer than two live neighbours dies, as if caused by underpopulation.
+- Any live cell with more than three live neighbours dies, as if by overcrowding.
+
+- fixed grid 10x10
+   3. Any live cell with two or three live neighbours lives on to the next generation.
+   4. Any dead cell with exactly three live neighbours becomes a live cell.
+
+- a live or dead cell
+
 Simple coding kata from London Software Craftsmanship Community sessions: Conway's Game of Life done with TDD
 
  You start with a two dimensional grid of cells, where each cell is either alive or dead.
