@@ -45,4 +45,14 @@ public class Cell {
         }
         return liveNeighbors;
     }
+
+    Cell getNextGeneration() {
+        List<Cell> liveNeighbours = getLiveNeighbours();
+        if (liveNeighbours.size() <2) {
+            return new Cell(false);
+        } else {
+            return new Cell(true);
+        }
+
+    }
 }
