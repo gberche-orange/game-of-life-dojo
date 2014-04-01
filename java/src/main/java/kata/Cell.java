@@ -33,4 +33,16 @@ public class Cell {
     public boolean isAlive() {
         return isAlive;
     }
+
+    List<Cell> getLiveNeighbours() {
+        List<Cell> neighbors = getNeighbours();
+        List<Cell> liveNeighbors = new ArrayList<Cell>();
+
+        for (Cell neighbor : neighbors) {
+            if (neighbor.isAlive()) {
+                liveNeighbors.add(neighbor);
+            }
+        }
+        return liveNeighbors;
+    }
 }
