@@ -1,8 +1,15 @@
 TODO
-   3. Any live cell with two or three live neighbours lives on to the next generation.
-- Any live cell with fewer than two live neighbours dies, as if caused by underpopulation.
 - Any live cell with more than three live neighbours dies, as if by overcrowding.
 
+- choose options:
+    global list of alive cells.
+       2 disjoints neighb
+    directions: left, right
+    dimension: 1
+    dimension: 2
+    fixed size: 10 or infinite size
+    text representation: -: dead X: alive
+        ordering
 - fixed grid 10x10
    4. Any dead cell with exactly three live neighbours becomes a live cell.
 
