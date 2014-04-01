@@ -7,9 +7,15 @@ import java.util.List;
  *
  */
 public class Cell {
+
+    private final ArrayList<Cell> cells;
+
+    public Cell() {
+        cells = new ArrayList<Cell>();
+    }
+
     public List<Cell> getNeighbours() {
-        ArrayList<Cell> cells = new ArrayList<Cell>();
         cells.add(new Cell());
-        return cells;
+        return this.cells;
     }
 }
