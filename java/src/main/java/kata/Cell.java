@@ -1,6 +1,7 @@
 package kata;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -12,8 +13,7 @@ public class Cell {
     private boolean isAlive;
 
     public Cell() {
-        cells = new ArrayList<Cell>();
-        isAlive = true;
+        this(true);
     }
 
     public Cell(boolean isAlive) {
@@ -21,8 +21,12 @@ public class Cell {
         cells = new ArrayList<Cell>();
     }
 
+    public Cell(Cell... cells) {
+        this(true);
+        Collections.addAll(this.cells, cells);
+    }
+
     public List<Cell> getNeighbours() {
-        cells.add(new Cell());
         return this.cells;
     }
 
