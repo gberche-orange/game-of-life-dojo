@@ -1,9 +1,11 @@
 TODO
+global list of alive cells.
+  2 disjoints neighbors
+  next generation
+
 - Any live cell with more than three live neighbours dies, as if by overcrowding.
 
 - choose options:
-    global list of alive cells.
-       2 disjoints neighb
     directions: left, right
     dimension: 1
     dimension: 2
